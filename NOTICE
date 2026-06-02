@@ -1,0 +1,11 @@
+dwImage
+
+This project includes third-party open-source dependencies.
+
+Primary runtime dependencies currently include:
+
+- PySide6
+- requests
+- Pillow
+
+Please review each dependency's license in its official distribution if you plan to redistribute this application.

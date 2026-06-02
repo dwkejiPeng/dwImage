@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build / distribution
+build/
+dist/
+*.egg-info/
+
+# IDE / editor
+.idea/
+.vscode/
+*.suo
+*.user
+*.userossc
+*.sln.docstates
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local app/runtime data
+*.db
+*.sqlite
+*.sqlite3
+request_logs.jsonl
+generated_images/
+
+# Local environment
+.env
+.env.*
+
+# Packaging
+*.spec
