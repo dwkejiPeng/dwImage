@@ -131,11 +131,11 @@ dwImage/
 
 ### 首页
 
-![dwImage 首页](docs/%E9%A6%96%E9%A1%B5.png)
+![dwImage 首页](docs/home.png)
 
 ### 历史记录
 
-![dwImage 历史记录](docs/%E5%8E%86%E5%8F%B2.png)
+![dwImage 历史记录](docs/history.png)
 
 ## Roadmap
 
