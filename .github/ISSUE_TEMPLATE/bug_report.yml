@@ -1,0 +1,63 @@
+name: Bug 反馈
+description: 报告程序异常、错误提示、布局问题或功能故障
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈问题。请尽量补充完整信息，这会帮助我们更快定位。
+  - type: input
+    id: version
+    attributes:
+      label: 版本
+      description: 例如 v0.1.0、main 分支最新代码
+      placeholder: v0.1.0
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows 版本
+      placeholder: Windows 11 23H2
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: Python 版本
+      placeholder: Python 3.11.9
+    validations:
+      required: false
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 请按顺序写出操作过程
+      placeholder: |
+        1. 打开程序
+        2. 导入 2 张参考图
+        3. 点击生成
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期结果
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 报错信息或日志
+      description: 可粘贴 traceback、接口报错或截图说明
+      render: shell
+    validations:
+      required: false

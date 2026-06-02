@@ -1,0 +1,31 @@
+name: 功能建议
+description: 提交新功能、交互优化或产品体验建议
+title: "[Feature] "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        欢迎提出功能建议。请尽量说明使用场景和收益。
+  - type: textarea
+    id: problem
+    attributes:
+      label: 你想解决什么问题？
+      placeholder: 当前批量生成流程里，某一步还不够顺手……
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 你希望怎样改进？
+      placeholder: 希望增加某个入口、状态提示或交互方式……
+    validations:
+      required: true
+  - type: textarea
+    id: benefit
+    attributes:
+      label: 这会带来什么价值？
+      placeholder: 能减少操作次数、降低误操作、提升批量处理效率……
+    validations:
+      required: false

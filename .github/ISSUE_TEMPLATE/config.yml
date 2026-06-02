@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 安全问题反馈
+    url: https://github.com/dwkejiPeng/dwImage/security
+    about: 敏感安全问题请不要公开提交 Issue
