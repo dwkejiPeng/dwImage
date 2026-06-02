@@ -129,19 +129,13 @@ dwImage/
 
 ## 截图
 
-欢迎后续补充真实界面截图，建议放到：
+### 首页
 
-- `docs/screenshots/generate.png`
-- `docs/screenshots/history.png`
-- `docs/screenshots/settings.png`
+![dwImage 首页](docs/%E9%A6%96%E9%A1%B5.png)
 
-补充后可直接在这里展示：
+### 历史记录
 
-```md
-![生成页](docs/screenshots/generate.png)
-![历史记录](docs/screenshots/history.png)
-![设置页](docs/screenshots/settings.png)
-```
+![dwImage 历史记录](docs/%E5%8E%86%E5%8F%B2.png)
 
 ## Roadmap
 
