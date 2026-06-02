@@ -902,7 +902,7 @@ class MainWindow(QMainWindow):
         self.generation_stage_label.setText("正在创建任务...")
         self.generation_progress.setRange(0, max(1, total_expected_tasks))
         self.generation_progress.setValue(0)
-        self.generation_progress.setFormat(f"0 / {total_expected_tasks}")
+        self.generation_progress.setFormat("准备提交...")
 
         worker = TaskWorker(self.service.submit_generation_batch, requests, self.settings)
         worker.signals.progress.connect(self.on_generation_progress)
@@ -1014,7 +1014,6 @@ class MainWindow(QMainWindow):
         completed = next((record for record in reversed(records) if record.result_image_path), None)
         if completed:
             self.show_record_preview(completed)
-        self.tabs.setCurrentWidget(self.history_tab)
 
     def on_prompt_optimized(self, prompt: str) -> None:
         self.optimize_button.setEnabled(True)
@@ -1440,8 +1439,10 @@ class MainWindow(QMainWindow):
         self.generation_progress.setValue(0)
         self.generation_progress.setFormat("等待开始")
 
-    def _set_generation_mode_hint(self, request: GenerationRequest) -> None:
-        if request.expected_task_count <= 1:
+    def _set_generation_mode_hint(self, request: GenerationRequest, request_count: int = 1) -> None:
+        if request_count > 1:
+            text = f"多提示词批量模式：{request_count} 条提示词，共 {request.expected_task_count * request_count} 个任务"
+        elif request.expected_task_count <= 1:
             text = "单图生成模式"
         elif request.should_split_attachments:
             text = f"多组生成模式：{len(request.image_paths)} 张参考图会分开生成"
