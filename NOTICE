@@ -2,6 +2,11 @@ dwImage
 
 This project includes third-party open-source dependencies.
 
+Project inspiration:
+
+- MintImage by aiqinxuancai
+  https://github.com/aiqinxuancai/MintImage
+
 Primary runtime dependencies currently include:
 
 - PySide6

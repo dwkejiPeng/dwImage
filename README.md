@@ -9,6 +9,17 @@
 `dwImage` 是一个使用 `PySide6` 构建的 Windows 桌面应用，提供文生图、参考图生成、批量任务、本地历史记录、提示词优化、多 API 配置等能力。  
 它适合希望在本地稳定管理出图流程，而不是频繁在网页和脚本之间来回切换的用户。
 
+## 项目来源
+
+`dwImage` 的产品灵感来源于开源项目 [aiqinxuancai/MintImage](https://github.com/aiqinxuancai/MintImage)。
+
+当前仓库是围绕 Windows 桌面使用场景重新实现和持续演进的 Python 版本，主要聚焦：
+
+- 更适合 Windows 的桌面端工作流
+- 多图批量生成与参考图批量处理
+- 本地历史记录、收藏与配置管理
+- 面向桌面端的交互与发布形态
+
 ## 项目定位
 
 - 仅面向 Windows 使用场景
@@ -195,6 +206,7 @@ dwImage/
 
 ## 致谢
 
+- [aiqinxuancai/MintImage](https://github.com/aiqinxuancai/MintImage)
 - [PySide6](https://doc.qt.io/qtforpython-6/)
 - [Requests](https://requests.readthedocs.io/)
 - [Pillow](https://python-pillow.org/)
